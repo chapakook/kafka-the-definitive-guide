@@ -51,6 +51,17 @@ Kafka 데이터 초기화가 필요한 경우:
 rm -rf docker/data
 ```
 
+✅ Kafka 정상 기동 확인:
+> start.sh 실행 후 아래 명령이 정상 출력되면 Kafka는 정상 기동 상태입니다.
+1. 컨테이너 접속
+```bash
+docker exec kafka-tdg bash -c
+```
+2. Kafka 상태 확인 커맨드 실행
+```bash
+kafka-broker-api-versions.sh --bootstrap-server localhost:9092
+```
+
 ### 🔄 실습 → PR → 산출물 흐름
 
 1. 사전 실습 수행

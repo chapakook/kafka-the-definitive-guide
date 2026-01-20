@@ -1,7 +1,6 @@
 # KRaft-based Kafka Setup
 
-이 스터디는 ZooKeeper 기반 Kafka가 아닌,
-**KRaft(Kafka Raft Metadata mode)** 기반 환경을 기준으로 실습합니다.
+이 스터디는 **KRaft(Kafka Raft Metadata mode)** 기반 환경을 기준으로 실습합니다.
 
 ## 왜 KRaft인가
 

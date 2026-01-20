@@ -36,11 +36,12 @@
 - 개인 기록과 공용 산출물은 절대 섞지 않습니다.
 - 주차별로 합의된 결과만 artifacts/에 반영합니다.
 
-### 🐳 Kafka 실행 방법 (KRaft)
+### 🐳 Kafka 실행 방법
 
+#### Zookeeper 기반 Kafka 실습 환경
 실습 환경 실행:
 ```bash
-cd docker
+cd docker/zookeeper
 ./start.sh
 ```
 - Bootstrap Server: localhost:9092
@@ -48,18 +49,32 @@ cd docker
 Kafka 데이터 초기화가 필요한 경우:
 ```bash
 ./stop.sh
-rm -rf docker/data
+rm -rf docker/zookeeper/data
 ```
 
-✅ Kafka 정상 기동 확인:
+#### KRaft 기반 Kafka 실습 환경
+실습 환경 실행:
+```bash
+cd docker/kraft
+./start.sh
+```
+- Bootstrap Server: localhost:9092
+
+Kafka 데이터 초기화가 필요한 경우:
+```bash
+./stop.sh
+rm -rf docker/kraft/data
+```
+
+#### ✅ Kafka 정상 기동 확인:
 > start.sh 실행 후 아래 명령이 정상 출력되면 Kafka는 정상 기동 상태입니다.
 1. 컨테이너 접속
 ```bash
-docker exec kafka-tdg bash -c
+docker exec -it kafka-tdg bash
 ```
 2. Kafka 상태 확인 커맨드 실행
 ```bash
-kafka-broker-api-versions.sh --bootstrap-server localhost:9092
+kafka-topics --bootstrap-server localhost:9092 --list
 ```
 
 ### 🔄 실습 → PR → 산출물 흐름

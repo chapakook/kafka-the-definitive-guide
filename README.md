@@ -7,10 +7,10 @@
 ### 👥 멤버
 
 - 강동윤
-- 김기찬
-- 댐댐
+- 김기찬 `@gichan222`
+- 댐댐 `@GwonDooHyeon`
 - 박종훈 `@Chapakook`
-- 홍용준
+- 홍용준 `@yonggoose`
 
 ### 🔑 핵심 운영 원칙
 

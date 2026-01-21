@@ -6,7 +6,7 @@
 
 ### 👥 멤버
 
-- 강동윤
+- 강동윤 `@mentaldy`
 - 김기찬 `@gichan222`
 - 댐댐 `@GwonDooHyeon`
 - 박종훈 `@Chapakook`
